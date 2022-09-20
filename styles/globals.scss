@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(118.56deg, #0f2337 0%, #003d4a 100%);
+  
+}
+
+#__next {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+}
+
+* {
+  font-family: heebo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
