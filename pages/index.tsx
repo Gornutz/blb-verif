@@ -45,7 +45,7 @@ const Home: NextPage = () => {
     </Link>
     <div className='flex justify-center'>
       <img
-        src={"/logo.svg"}
+        src={"public/images/logo.svg"}
         alt="blueberry logo"
         className={styles.logo}
       />
