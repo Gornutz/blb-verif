@@ -39,13 +39,16 @@ const Home: NextPage = () => {
   };
   return (
     <div className={styles.container}>
-      <div className="flex justify-center">
-        <img
-          src={"/images/logo.svg"}
-          alt="canto logo"
-          className={styles.logo}
-        />
-      </div>
+    <Link href={"/home"}>
+      <a className={styles.btnTakeHome}>Take me Home</a>
+    </Link>
+    <div className='flex justify-center'>
+      <img
+        src={"/logo.svg"}
+        alt="blueberry logo"
+        className={styles.logo}
+      />
+    </div>
 
       {/* <h1 className={styles.title}>Settlers of Blueberry</h1> */}
 
