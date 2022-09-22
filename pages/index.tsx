@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import styles from "../styles/home.module.scss";
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   const [psuedoName, setPsuedoName] = useState("");
@@ -39,7 +40,7 @@ const Home: NextPage = () => {
   };
   return (
     <div className={styles.container}>
-    <Link href={"/home"}>
+    <Link href="https://www.blueberry.garden/home">
       <a className={styles.btnTakeHome}>Take me Home</a>
     </Link>
     <div className='flex justify-center'>
@@ -50,19 +51,11 @@ const Home: NextPage = () => {
       />
     </div>
 
-      {/* <h1 className={styles.title}>Settlers of Blueberry</h1> */}
-
       <h3 className={styles.title1}>
         Congratulations anon. You found Blueberry while still in stealth mode.
         Claim your spot by completing the steps below. And remember--the early
         bird gets the blueberries.
       </h3>
-
-      {/* <p className={styles.alignLeft}>
-        <span className="font-semibold">
-          The goals of Settlers are as follows:
-        </span>
-      </p> */}
 
       <ul className={styles.alignLeft}>
         <li className="mx-[30px] my-[10px]">
