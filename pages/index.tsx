@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       <a className={styles.btnTakeHome}>Take me Home</a>
     </Link>
     <div className='flex justify-center'>
-    <img
+    <Image
           src={"/logo.svg"}
           alt="blueberry logo"
           className={styles.logo}
