@@ -46,12 +46,12 @@ const Home: NextPage = () => {
       <a className={styles.btnTakeHome}>Take me Home</a>
     </Link>
     <div className='flex justify-center'>
-      <img
-        src={"/logo.svg"}
-        alt="blueberry logo"
-        className={styles.logo}
-      />
-    </div>
+    <img
+          src={"/logo.svg"}
+          alt="blueberry logo"
+          className={styles.logo}
+        />
+      </div>
 
       <h3 className={styles.title1}>
         Congratulations anon. You found Blueberry while still in stealth mode.
