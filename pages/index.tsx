@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { NextPage } from "next";
 import Image from 'next/image'
 import logo from '../public/images/logo.svg'
@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   const [psuedoName, setPsuedoName] = useState("");
+  const [discordName, setDiscordName] = useState("");
   const [walletAddress, setWalletAddress] = useState("");
   const [verifyUrl, setVerifyUrl] = useState("");
   const [showError, setShowError] = useState(false);
@@ -93,6 +94,7 @@ const Home: NextPage = () => {
           {showError && (
             <>
               {psuedoName == "" && <p>Please enter a twitter handle.</p>}
+              {discordName == "" && <p>Please enter a Discord Name</p>}
               {walletAddress == "" && <p>Please enter a wallet address.</p>}
               {verifyUrl == "" && (
                 <p>Please enter the tweet url for verification.</p>
@@ -113,6 +115,18 @@ const Home: NextPage = () => {
             onChange={(e) => setPsuedoName(e.target.value)}
             value={psuedoName}
           />
+        </div>
+        <div className={styles.field}>
+          <label>Discord Username</label>
+          <input 
+            type="text"
+            required
+            placeholder="Name#0000"
+            name="discordName"
+            id="discordName"
+            onChange={(e) => setDiscordName(e.target.value)}
+            value={discordName}
+            />
         </div>
         <div className={styles.field}>
           <label>Wallet address</label>
