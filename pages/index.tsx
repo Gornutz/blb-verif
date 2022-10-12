@@ -87,7 +87,7 @@ const Home: NextPage = () => {
         <input
           type="hidden"
           name="access_key"
-          value="1110f8e5-d278-4698-aeca-0c0b52c9a0c4"
+          value="9ef9f0c7-b617-4f77-ba13-57e7f51c88b3"
         />
         <div className={styles.errors}>
           {showError && (
@@ -103,11 +103,11 @@ const Home: NextPage = () => {
         Please do not change twitter handle and wallet address after generating
         verification tweet.
         <div className={styles.field}>
-          <label>twitter_handle</label>
+          <label>Twitter handle</label>
           <input
             type="text"
             required
-            placeholder="ninja"
+            placeholder="@blbprotocol"
             name="psuedoName"
             id="psuedoName"
             onChange={(e) => setPsuedoName(e.target.value)}
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
           />
         </div>
         <div className={styles.field}>
-          <label>wallet_address</label>
+          <label>Wallet address</label>
 
           <input
             type="text"
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
           Generate verification tweet
         </button>
         <div className={`${styles.field} mt-[2rem]`}>
-          <label>verification_url</label>
+          <label>Verification url</label>
 
           <input
             type="text"
