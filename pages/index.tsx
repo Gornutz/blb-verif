@@ -79,6 +79,7 @@ const Home: NextPage = () => {
           on Twitter
         </li>
       </ul>
+    </div>  
   );
 };
 
