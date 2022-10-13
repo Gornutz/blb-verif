@@ -56,8 +56,7 @@ const Home: NextPage = () => {
 
       <h3 className={styles.title1}>
         Congratulations anon. You found Blueberry while still in stealth mode.
-        Claim your spot by completing the steps below. And remember--the early
-        bird gets the blueberries.
+        Join our Social Media pages to be in the loop.
       </h3>
 
       <ul className={styles.alignLeft}>
@@ -79,91 +78,7 @@ const Home: NextPage = () => {
           on Twitter
         </li>
       </ul>
-
-      <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        className={styles.form}
-      >
-        <input
-          type="hidden"
-          name="access_key"
-          value="9ef9f0c7-b617-4f77-ba13-57e7f51c88b3"
-        />
-        <div className={styles.errors}>
-          {showError && (
-            <>
-              {psuedoName == "" && <p>Please enter a twitter handle.</p>}
-              {discordName == "" && <p>Please enter a Discord Name</p>}
-              {walletAddress == "" && <p>Please enter a wallet address.</p>}
-              {verifyUrl == "" && (
-                <p>Please enter the tweet url for verification.</p>
-              )}
-            </>
-          )}
-        </div>
-        Please do not change twitter handle and wallet address after generating
-        verification tweet.
-        <div className={styles.field}>
-          <label>Twitter handle</label>
-          <input
-            type="text"
-            required
-            placeholder="@blbprotocol"
-            name="psuedoName"
-            id="psuedoName"
-            onChange={(e) => setPsuedoName(e.target.value)}
-            value={psuedoName}
-          />
-        </div>
-        <div className={styles.field}>
-          <label>Discord Username</label>
-          <input 
-            type="text"
-            required
-            placeholder="Name#0000"
-            name="discordName"
-            id="discordName"
-            onChange={(e) => setDiscordName(e.target.value)}
-            value={discordName}
-            />
-        </div>
-        <div className={styles.field}>
-          <label>Wallet address</label>
-
-          <input
-            type="text"
-            required
-            placeholder="0xEE4....890"
-            name="walletAddress"
-            id="walletAddress"
-            onChange={(e) => setWalletAddress(e.target.value)}
-            value={walletAddress}
-          />
-        </div>
-        <button
-          className={styles.btnTwitterShare}
-          data-size="large"
-          onClick={btnVerifyHandle}
-        >
-          Generate verification tweet
-        </button>
-        <div className={`${styles.field} mt-[2rem]`}>
-          <label>Verification url</label>
-
-          <input
-            type="text"
-            required
-            placeholder="https:// of the tweet"
-            name="validate"
-            id="validate"
-            onChange={(e) => setVerifyUrl(e.target.value)}
-            value={verifyUrl}
-          />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    </div>  
   );
 };
 
