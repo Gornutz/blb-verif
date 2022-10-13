@@ -161,7 +161,6 @@ const Home: NextPage = () => {
             value={verifyUrl}
           />
         </div>
-        <button type="submit">Submit</button>
       </form>
     </div>
   );
