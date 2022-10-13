@@ -56,8 +56,7 @@ const Home: NextPage = () => {
 
       <h3 className={styles.title1}>
         Congratulations anon. You found Blueberry while still in stealth mode.
-        Claim your spot by completing the steps below. And remember--the early
-        bird gets the blueberries.
+        Join our Social Media to be in the loop.
       </h3>
 
       <ul className={styles.alignLeft}>
